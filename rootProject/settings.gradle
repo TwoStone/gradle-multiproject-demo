@@ -1,7 +1,8 @@
-include 'feature-a:a',
+includeFlat 'feature-a:a',
     'feature-a:b',
     'feature-b:c',
-    'feature-b:d'
+    'feature-b:d',
+    '2ndFeature'
 
 rootProject.children.each { project ->
     String fileBaseName = project.name.toLowerCase()
