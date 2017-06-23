@@ -1,0 +1,9 @@
+include 'feature-a:a',
+    'feature-a:b',
+    'feature-b:c',
+    'feature-b:d'
+
+rootProject.children.each { project ->
+    String fileBaseName = project.name.toLowerCase()
+    project.buildFileName = "${fileBaseName}.gradle"
+}
